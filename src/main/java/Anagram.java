@@ -4,8 +4,8 @@ import java.util.HashMap;
 public class Anagram {
 
     public static void main(String args[]){
-            String s1 = "agora sim";
-            String s2 = "sim agor";
+            String s1 = "dlo";
+            String s2 = "old";
 
             System.out.println("Is Anagram? " + s1 + " - " + s2);
             System.out.println(isRealAnagram(s1, s2));
@@ -21,7 +21,7 @@ public class Anagram {
      */
      private static boolean isRealAnagram(String s1, String s2){
 
-            //Consider not valid border cases
+            //Consider not valid edge cases
             if ((s1 == null) || (s2 == null) || (s1 == "") || (s2 == "")) {
                 return false;
             }
